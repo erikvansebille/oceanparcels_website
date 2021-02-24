@@ -181,9 +181,11 @@ class DrifterApp {
 
 		marker.setStyle(new ol.style.Style({
 			image: new ol.style.Icon({
-				anchor: [0.5, 1],
 				src: "marker.svg",
-				scale: 0.8,
+				size: [60, 60],
+				anchorXUnits: "pixels",
+				anchorYUnits: "pixels",
+				anchor: [12, 40],
 				opacity: opacity,
 				color: colour
         	}),
